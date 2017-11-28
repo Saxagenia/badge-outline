@@ -7,9 +7,10 @@
 
   &[href] {
     @include hover-focus {
-      color: $bg;
+      color: color-yiq($bg);
       text-decoration: none;
-      border-color: darken($bg, 10%);
+      border-color: $bg;
+      background-color: $bg;
     }
   }
 }
