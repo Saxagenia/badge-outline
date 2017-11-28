@@ -1,0 +1,15 @@
+@mixin badge-variant-outline($bg) {
+  color: $bg;
+  border-color: $bg;
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+
+  &[href] {
+    @include hover-focus {
+      color: $bg;
+      text-decoration: none;
+      border-color: darken($bg, 10%);
+    }
+  }
+}
